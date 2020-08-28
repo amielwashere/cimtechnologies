@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CIM TRANSPORT</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Dashboard</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="#">Features</a>
+      <a class="nav-link" href="#">Pricing</a>
+      <a class="nav-link " href="index.html" tabindex="-1" aria-disabled="true">logout</a>
+    </div>
+  </div>
+</nav>
+
+<div class="float-left">
+<div class="card" style="width: 30rem;">
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">
+
+<div class="tab">
+  <button class="tablinks active" onclick="openCity(event, 'L300')">L300/Van</button>
+  <button class="tablinks" onclick="openCity(event, 'Innova')">Innova</button>
+
+</div>
+
+<!-- Tab content -->
+<div id="L300" class="tabcontent">
+  <h3>L300/Van</h3>
+  <p>
+
+  	<div class="form-group">
+    <label for="exampleInputEmail1">PICK UP</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CIM Technologies, Incorporated
+SEDCCO 1, 120 Rada, Legazpi Village, Manila, Metro Manila" disabled>
+  </div> <br>
+  <div class="form-group">
+    <label for="exampleInputEmail1">DROP OFF</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add location">
+  </div>
+  <div class="float-right">
+  <a href="#">+ add more location</a><br>
+  <a href="#">+ add extra helper</a>
+  </div>
+<br>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Compute</button>
+
+  </p>
+</div>
+
+<div id="Innova" class="tabcontent">
+  <h3>Innova</h3>
+  <p>
+
+  	<div class="form-group">
+    <label for="exampleInputEmail1">PICK UP</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CIM Technologies, Incorporated
+SEDCCO 1, 120 Rada, Legazpi Village, Manila, Metro Manila" disabled>
+  </div> <br>
+  <div class="form-group">
+    <label for="exampleInputEmail1">DROP OFF</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add location">
+  </div>
+  <div class="float-right">
+  <a href="#">+ add more location</a><br>
+  <a href="#">+ add extra helper</a>
+  </div>
+<br>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Compute</button>
+
+  </p>
+</div>
+    	</p>
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">COMPUTATION</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label for="exampleInputEmail1">PICK UP</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CIM Technologies, Incorporated
+SEDCCO 1, 120 Rada, Legazpi Village, Manila, Metro Manila" disabled>
+<br>
+        <label for="exampleInputEmail1">DROP OFF LOCATION</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="DROP OFF" disabled>
+      </div>
+		&nbsp; &nbsp; PICK UP LOCATION: <br>
+		&nbsp; &nbsp; DROP OFF LOCATION: <br>
+		&nbsp; &nbsp; TOTAL DISTANCE: <br>
+		&nbsp; &nbsp; DEPARTURE: <br>
+		&nbsp; &nbsp; ESTIMATE ARRIVED: <br>
+		&nbsp; &nbsp; ADD ONS: <br>
+			<center><b> TOTAL: </b></center> <br>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">CONFIRM</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="float-right">
+	<span class="border border-success">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.776131757593!2d121.01741292982827!3d14.554790742836923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90e3e32f933%3A0x5c86dab8539e30a9!2sCim%20Technologies%20Incorporated!5e0!3m2!1sen!2sph!4v1598606635737!5m2!1sen!2sph" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</span>
+</div><br>
+
+<script type="text/javascript" src="java.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
